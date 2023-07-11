@@ -5,18 +5,6 @@ import os
 from langchain import  HuggingFaceHub
 import streamlit as st
 
-from pydantic import BaseModel, validator
-
-class MyModel(BaseModel):
-    my_field: str
-
-    @validator('my_field')
-    def validate_my_field(cls, value):
-        # Your validation logic here
-        return value
-
-
-
 os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
 llm=HuggingFaceHub(repo_id="bigscience/bloom")
 
