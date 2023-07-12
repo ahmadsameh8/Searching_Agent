@@ -7,7 +7,7 @@ nltk==3.8.1
 numexpr==2.8.4
 numpy
 packaging==23.1
-pandas==1.5.3
+pandas==
 pipreqs==0.4.13
 pycparser==2.21
 pydantic==1.10.9
