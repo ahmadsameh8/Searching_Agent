@@ -1,4 +1,4 @@
-from langchain.agents.agent_types import Tool
+from langchain.agents import Tool
 from langchain.tools import DuckDuckGoSearchRun, Tool, BraveSearch, WikipediaQueryRun
 from langchain.utilities import GoogleSearchAPIWrapper,GoogleSerperAPIWrapper,WikipediaAPIWrapper
 import os
