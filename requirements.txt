@@ -15,7 +15,7 @@ pydeck==0.8.1b0
 PyPDF2==3.0.1
 requests==2.31.0
 scikit-learn
-scipy==1.11.0
+scipy
 sentence-transformers==2.2.2
 sentencepiece==0.1.99
 streamlit==1.24.0
