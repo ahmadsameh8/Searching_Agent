@@ -5,7 +5,7 @@ import os
 from langchain import  HuggingFaceHub
 import streamlit as st
 
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
+os.environ["HUGGINGFACEHUB_API_TOKEN"] = "HuggingFaceKey"
 llm=HuggingFaceHub(repo_id="bigscience/bloom")
 
 def searchDuckDuckGo(inputText):
@@ -13,8 +13,8 @@ def searchDuckDuckGo(inputText):
   return (search.run(inputText))
 
 def googleSearch(inputText):
-  os.environ["GOOGLE_CSE_ID"] = "e537a6ebee00944ae"
-  os.environ["GOOGLE_API_KEY"] = "AIzaSyAoqW-8TgiLNFYUEwZZ692kxFXRaqKnXTI"
+  os.environ["GOOGLE_CSE_ID"] = "KEY"
+  os.environ["GOOGLE_API_KEY"] = "KEY"
   search = GoogleSearchAPIWrapper()
   tool = Tool(
       name="Google Search",
@@ -23,7 +23,7 @@ def googleSearch(inputText):
   return (tool.run(inputText))
 
 def serperApi(inputText):
-  os.environ["SERPER_API_KEY"] = "08c40fa92dadc0d27cc04ea66a91843bf527b617"
+  os.environ["SERPER_API_KEY"] = "KEY"
   search = GoogleSerperAPIWrapper()
   tools = [
       Tool(
@@ -37,7 +37,7 @@ def serperApi(inputText):
   return results
 
 def braveSearch(inputText):
-  api_key = "BSAv1neIuQOsxqOyy0sEe_ie2zD_n_V"
+  api_key = "KEY"
   tool = BraveSearch.from_api_key(api_key=api_key, search_kwargs={"count": 1})
   return (tool.run(inputText))
 
