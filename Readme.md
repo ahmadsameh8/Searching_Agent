@@ -18,7 +18,7 @@ Streamlit Interface: Simple and interactive UI to input questions and view resul
 
 File Overview
 
-File Name: search_agents.py
+File Name: Search.py
 
 This file contains:
 
