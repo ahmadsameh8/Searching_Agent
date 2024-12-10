@@ -45,18 +45,18 @@ Brave API Key: Brave Search API key.
 
 Example:
 ```
-export HUGGINGFACEHUB_API_TOKEN="your_huggingface_api_token"
-export GOOGLE_CSE_ID="your_google_cse_id"
-export GOOGLE_API_KEY="your_google_api_key"
-export SERPER_API_KEY="your_serper_api_key"
-export BRAVE_API_KEY="your_brave_api_key"
-```
+import os
+os.environ["HUGGINGFACEHUB_API_TOKEN"] = "HuggingFaceKey"
+os.environ["GOOGLE_CSE_ID"] = "KEY"
+os.environ["GOOGLE_API_KEY"] = "KEY"
+os.environ["SERPER_API_KEY"] = "KEY"
+ ```
 Installation
 
 Clone the repository:
 ```
-git clone https://github.com/your_username/your_repository.git
-cd your_repository
+git clone https://github.com/ahmadsameh8/Searching_Agent.git
+cd Searching_Agent
 ```
 Install the dependencies:
 ```
@@ -64,7 +64,7 @@ pip install -r requirements.txt
 ```
 Run the Streamlit application:
 ```
-streamlit run search_agents.py
+streamlit run Search.py
 ```
 How It Works
 
